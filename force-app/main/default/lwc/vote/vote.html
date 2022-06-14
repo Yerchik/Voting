@@ -1,0 +1,33 @@
+<template >
+    <lightning-quick-action-panel title="Quick Action Title">
+        <template if:true={isVoteOpen}>
+            <div class="slds-p-around_small">
+                <div class="slds-text-heading_large">{name}</div>
+                <div class="slds-text-heading_medium">{description}</div>
+            </div>
+            
+                <template if:true={questions}>
+                    <template for:each={questions} for:item="question">
+
+                        <div class="slds-box slds-box_small slds-m-around_x-small" key={question.Id}>
+                            <lightning-radio-group key={question.Id} name={question.Id}
+                                label={question.Name}
+                                options={question.value}
+                                value={value}
+                                required
+                                type="radio"
+                                class="slds-m-around_x-small slds-text-heading_large"></lightning-radio-group>
+                        </div>
+                    </template>
+                </template>
+            
+            
+            
+            <div slot="footer">
+                <lightning-button variant="neutral" label="Cancel" onclick={closeAction} class="slds-m-left_x-small"></lightning-button>
+                <lightning-button variant="brand" label="Save" onclick={saveAction} class="slds-m-left_x-small"></lightning-button>
+            </div>   
+        </template> 
+    </lightning-quick-action-panel>
+        
+</template>

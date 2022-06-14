@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ExcUtil_Email_Subject</fullName>
+        <categories>EXC_UTIL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exception Utility Email Subject</shortDescription>
+        <value>Error Handling Notification</value>
+    </labels>
+    <labels>
+        <fullName>ExcUtil_Error_Cause</fullName>
+        <categories>EXC_UTIL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exception Utility Error Cause</shortDescription>
+        <value>Cause: {cause}</value>
+    </labels>
+    <labels>
+        <fullName>ExcUtil_Error_Message</fullName>
+        <categories>EXC_UTIL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exception Utility Error Message</shortDescription>
+        <value>Error Message: {message}</value>
+    </labels>
+    <labels>
+        <fullName>ExcUtil_Stack_Trace</fullName>
+        <categories>EXC_UTIL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exception Utility Stack Trace</shortDescription>
+        <value>Stack Trace: {stackTrace}</value>
+    </labels>
+</CustomLabels>
